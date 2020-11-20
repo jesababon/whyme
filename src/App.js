@@ -1,4 +1,3 @@
-import './App.css';
 import './CMS.css';
 import Header from './header';
 import Footer from './footer';
