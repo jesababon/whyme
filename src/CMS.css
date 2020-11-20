@@ -34,6 +34,7 @@
 
  .App-link {
 	color: #61dafb;
+	text-decoration: none;
  }
  
  @keyframes App-logo-spin {
@@ -1450,7 +1451,8 @@ a:active {
 	-ms-flex-wrap: wrap;
 	flex-wrap: wrap;
 	font-weight: 400;
-	margin: 8px 0;
+	margin: 2vh 0;
+	margin-top: 0;
 	max-width: 65ex;
 	min-height: 32px;
 	padding-left: 40px;

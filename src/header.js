@@ -7,7 +7,6 @@ function Header(){
    return(
       <div>
       <header className="App-header ds-u-fill--primary">
-        Header
         <Link to='/'>
         <img src={logo} className="App-logo " alt="logo" />
         </Link>
