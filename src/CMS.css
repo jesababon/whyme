@@ -799,11 +799,11 @@
 a {
 	color: #0071bc;
 	cursor: pointer;
-	text-decoration: underline;
+	text-decoration: none;
 }
 .ds-c-link:visited,
 a:visited {
-	color: #4c2c92;
+	color: #fff;
 }
 .ds-c-link:hover,
 a:hover {
@@ -822,7 +822,7 @@ a:active {
 .ds-c-link--inverse {
 	color: #fff;
 	cursor: pointer;
-	text-decoration: underline;
+	text-decoration: none;
 }
 .ds-base--inverse a:focus:not(.ds-c-button),
 .ds-c-link--inverse:focus {
