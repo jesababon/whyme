@@ -1,29 +1,60 @@
 import React from 'react'
 import {ReactComponent as RightArrow} from './images/next.svg';
-import ChoiceList from '@cmsgov/design-system/dist/components/ChoiceList/ChoiceList'
-// import Choice from '@cmsgov/design-system/dist/components/ChoiceList/Choice'
+// import ChoiceList from '@cmsgov/design-system/dist/components/ChoiceList/ChoiceList'
+import Choice from '@cmsgov/design-system/dist/components/ChoiceList/Choice'
 
 class Second extends React.Component{
    constructor(props){
       super(props);
-      this.state = {value: ''};
+      this.firstBox = this.firstBox.bind(this);
+      this.secondBox = this.secondBox.bind(this);
+      this.state = {
+         details: {first_val:'', second_val:''}
+      };
   
-      this.handleChange = this.handleChange.bind(this);
+      // this.handleChange = this.handleChange.bind(this);
       this.handleSubmit = this.handleSubmit.bind(this);
     }
   
-    handleChange(event) {
-      this.setState({value: event.target.value});
+    firstBox(event) {
+     const value= event.target.value;
+      this.setState(function(state){
+         return{
+            details: Object.assign({},
+               state.details, {
+                  first_val: value
+               })
+               
+         }
+      })
+      console.log(event.target.value);
     }
+
+    secondBox(event) {
+     const value= event.target.value;
+      this.setState(function(state){
+         return{
+            details: Object.assign({},
+               state.details, {
+                  second_val: value
+               })
+               
+         }
+      })
+    }
+   //  handleChange(event) {
+   //    // this.setState({value1: event.target.id, value2: event.target.id});
+   //    this.setState({value: event.target.value});
+   //    console.log(event.target.value);
+   //  }
   
     handleSubmit(event) {
       alert('A name was submitted: ' + this.state.value);
       event.preventDefault();
-
-      console.log(this);
-     
-
+      console.log(this.state)
     }
+
+     
     render(){
       return(
          <div>
@@ -31,8 +62,8 @@ class Second extends React.Component{
                What qualities are you looking for in a junior dev?
             </p>
             <br/>
-            <fieldset className="ds-c-fieldset ds-u-display--inline-block" onChange={this.handleChange}>
-            <ChoiceList
+            <fieldset className="ds-c-fieldset ds-u-display--inline-block">
+            {/* <ChoiceList
                choices={[
                { label: 'Believes in clean code and follows OOP.', value: 'A', defaultChecked:true},
                { label: 'Strong passion for good design.', value: 'B' },
@@ -42,27 +73,31 @@ class Second extends React.Component{
                { label: 'Strong interest in civic tech', value: 'F' },
                ]}
                className=" checkbox_choices"
-               name=" checkbox_choices"
+               // name="checkbox_choices"
                label="Choose your requirements."
                hint="Minimum of one requirement."
                type="checkbox"
-            />
-            {/* <Choice
-            //   defaultChecked
+            /> */}
+            <Choice
             className="checkbox_choice"
-            name="checkbox_choice"
             type="checkbox"
             label="Loves dogs."
-            value="G"
-            checkedChildren={<div className="ds-c-choice__checkedChild"
-            >something</div>}
-            /> */}
+            name='value1' value='1'
+            onChange={this.firstBox} 
+            />
+            <Choice
+            //   defaultChecked
+            className="checkbox_choice"
+            type="checkbox"
+            label="Loves flowers."
+            name='value2' value='2'
+            onChange={this.secondBox} 
+            />
             </fieldset>
             <br/>
             {/* <input type="text" className="ds-c-field ds-u-display--inline-block" /> */}
             &nbsp;
             <button onClick={this.handleSubmit} className="ds-c-button ds-c-button--primary ds-u-margin-top--2">
-  
                Submit
                <RightArrow className="ds-u-margin-left--1"/>
             </button>
