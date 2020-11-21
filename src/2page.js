@@ -6,34 +6,38 @@ import { Redirect } from "react-router";
 class Second extends React.Component {
 	constructor(props) {
 		super(props);
-		this.firstBox = this.firstBox.bind(this);
-		this.secondBox = this.secondBox.bind(this);
+		this.checkedBox = this.checkedBox.bind(this);
+		// this.secondBox = this.secondBox.bind(this);
 		this.state = {
-			value: 0,
+			value: 0
 		};
 		this.handleSubmit = this.handleSubmit.bind(this);
 	}
 
-	firstBox(event) {
+	checkedBox(event) {
 		this.setState(function (state) {
          if(event.target.checked === true){
          state.value += 1;
+         }else{
+            state.value -= 1;
          }
-         console.log('first checked?:',event.target.checked)
+         console.log('checked?:',this.state)
 		});
-	}
+   }
+   
+   
 
-	secondBox(event) {
-		this.setState(function (state) {
-			if(event.target.checked === true){
-            state.value += 1;
-            }
-            console.log('second checked?:',event.target.checked)
-		});
-	}
+	// secondBox(event) {
+	// 	this.setState(function (state) {
+	// 		if(event.target.checked === true){
+   //          state.value += 1;
+   //          }
+   //          console.log('second checked?:',event.target.checked)
+	// 	});
+	// }
 
 	handleSubmit(event) {
-		if (event.target.checked !== false && this.state.value >= 1) {
+		if (this.state.value > 1) {
 			this.setState({ redirect: true });
 			event.preventDefault();
 			console.log(this.state)
@@ -61,35 +65,32 @@ class Second extends React.Component {
 						type="checkbox"
 						label="Strong passion for good design."
 						name="value1"
-						value="1"
-						onChange={this.firstBox}
+						
+						onChange={this.checkedBox}
 					/>
 					<Choice
-						//   defaultChecked
 						className="checkbox_choice"
 						type="checkbox"
 						label="Willingness to learn."
 						name="value2"
-						value="1"
-						onChange={this.secondBox}
+						
+						onChange={this.checkedBox}
 					/>
 					<Choice
-						//   defaultChecked
 						className="checkbox_choice"
 						type="checkbox"
 						label="Experience being a team player."
 						name="value3"
-						value="1"
-						onChange={this.thirdBox}
+						
+						onChange={this.checkedBox}
 					/>
 					<Choice
-						//   defaultChecked
 						className="checkbox_choice"
 						type="checkbox"
 						label="Strong interest in civic tech."
 						name="value4"
-						value="1"
-						onChange={this.fourthBox}
+						
+						onChange={this.checkedBox}
 					/>
 				</fieldset>
 				<br />
