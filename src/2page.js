@@ -1,6 +1,5 @@
 import React from 'react'
 import {ReactComponent as RightArrow} from './images/next.svg';
-// import {Link} from 'react-router-dom';
 import Choice from '@cmsgov/design-system/dist/components/ChoiceList/Choice'
 import { Redirect } from 'react-router';
 
@@ -32,7 +31,7 @@ class Second extends React.Component{
        if(this.state.value >=1){
       this.setState({redirect: true});
       event.preventDefault();
-      console.log(this.state)
+      // console.log(this.state)
        }else{
          alert('Please choose at least one.');
        }
@@ -41,7 +40,7 @@ class Second extends React.Component{
      
     render(){
       if (this.state.redirect === true) {
-         return <Redirect push to="/" />;
+         return <Redirect push to="Third" />;
        }
 
       return(

@@ -3,15 +3,16 @@ import {Link} from 'react-router-dom';
 import Button from '@cmsgov/design-system/dist/components/Button/Button'
 
 
-function First(){
+class First extends React.Component{
 
-   function sayNo(){
+   sayNo(){
       alert("Hahaha. Very Funny. We know why you're here.");
    }
-  
-return(
-   <div>
 
+render(){
+
+  return(
+    <div>
           <h3>
             What are you looking for?
           </h3>
@@ -19,12 +20,13 @@ return(
             Yes
           </Button>
           &nbsp;
-          <Button onClick={sayNo} type="button" className="ds-c-button ds-c-button--danger ds-c-button--big">
+          <Button onClick={this.sayNo} type="button" className="ds-c-button ds-c-button--danger ds-c-button--big">
             No
           </Button>
 
    </div>
 )
+}
 }
 
 export default First;
