@@ -1,7 +1,8 @@
 import React from 'react'
 import {ReactComponent as RightArrow} from './images/next.svg';
-// import ChoiceList from '@cmsgov/design-system/dist/components/ChoiceList/ChoiceList'
+// import {Link} from 'react-router-dom';
 import Choice from '@cmsgov/design-system/dist/components/ChoiceList/Choice'
+import { Redirect } from 'react-router';
 
 class Second extends React.Component{
    constructor(props){
@@ -9,75 +10,54 @@ class Second extends React.Component{
       this.firstBox = this.firstBox.bind(this);
       this.secondBox = this.secondBox.bind(this);
       this.state = {
-         details: {first_val:'', second_val:''}
+         value: 0
       };
-  
-      // this.handleChange = this.handleChange.bind(this);
       this.handleSubmit = this.handleSubmit.bind(this);
     }
   
-    firstBox(event) {
-     const value= event.target.value;
+    firstBox() {
       this.setState(function(state){
-         return{
-            details: Object.assign({},
-               state.details, {
-                  first_val: value
-               })
-               
-         }
+         state.value+=0.5
       })
-      console.log(event.target.value);
+      // console.log(event.target.value);
     }
 
-    secondBox(event) {
-     const value= event.target.value;
+    secondBox() {
       this.setState(function(state){
-         return{
-            details: Object.assign({},
-               state.details, {
-                  second_val: value
-               })
-               
-         }
+         state.value+=0.5
       })
     }
-   //  handleChange(event) {
-   //    // this.setState({value1: event.target.id, value2: event.target.id});
-   //    this.setState({value: event.target.value});
-   //    console.log(event.target.value);
-   //  }
   
     handleSubmit(event) {
-      alert('A name was submitted: ' + this.state.value);
+       if(this.state.value >=1){
+      this.setState({redirect: true});
       event.preventDefault();
       console.log(this.state)
+       }else{
+         alert('Please choose at least one.');
+       }
     }
 
      
     render(){
+      if (this.state.redirect === true) {
+         return <Redirect push to="/" />;
+       }
+
       return(
+         
          <div>
             <p className="ds-title">
                What qualities are you looking for in a junior dev?
             </p>
+            <h1>
+            Choose your requirements.
+            </h1>
+            <h2>
+            Minimum of one requirement.
+            </h2>
             <br/>
             <fieldset className="ds-c-fieldset ds-u-display--inline-block">
-            {/* <ChoiceList
-               choices={[
-               { label: 'Believes in clean code and follows OOP.', value: 'A', defaultChecked:true},
-               { label: 'Strong passion for good design.', value: 'B' },
-               { label: 'Eager to learn whatever is required.', value: 'C' },
-               { label: 'Strong interest in civic tech.', value: 'D' },
-               { label: 'Experience being a team player.', value: 'E' },
-               { label: 'Strong interest in civic tech', value: 'F' },
-               ]}
-               className=" checkbox_choices"
-               // name="checkbox_choices"
-               label="Choose your requirements."
-               hint="Minimum of one requirement."
-               type="checkbox"
-            /> */}
             <Choice
             className="checkbox_choice"
             type="checkbox"
@@ -102,11 +82,6 @@ class Second extends React.Component{
                <RightArrow className="ds-u-margin-left--1"/>
             </button>
             <br/>
-            {/* <ul className="ds-c-list ds-u-font-size--h5 " >
-               <li><strong>Legislative</strong> – Makes laws (Congress)</li>
-               <li><strong>Executive</strong> – Carries out laws (President, Vice President, Cabinet)</li>
-               <li><strong>Judicial</strong> – Evaluates laws (Supreme Court and other courts)</li>
-            </ul> */}
          </div>
       )
       }

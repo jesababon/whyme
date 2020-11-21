@@ -11,7 +11,10 @@ function First(){
   
 return(
    <div>
-        <p className="ds-display">
+
+          <h3>
+            What are you looking for?
+          </h3>
           <Button component={Link} to="/Second" type="button" className="ds-c-button ds-c-button--primary ds-c-button--big">
             Yes
           </Button>
@@ -19,7 +22,6 @@ return(
           <Button onClick={sayNo} type="button" className="ds-c-button ds-c-button--danger ds-c-button--big">
             No
           </Button>
-        </p>
 
    </div>
 )
