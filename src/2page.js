@@ -16,14 +16,13 @@ class Second extends React.Component {
 
 	firstBox() {
 		this.setState(function (state) {
-			state.value += 0.5;
+			state.value += 1;
 		});
-		// console.log(event.target.value);
 	}
 
 	secondBox() {
 		this.setState(function (state) {
-			state.value += 0.5;
+			state.value += 1;
 		});
 	}
 
@@ -31,7 +30,7 @@ class Second extends React.Component {
 		if (this.state.value >= 1) {
 			this.setState({ redirect: true });
 			event.preventDefault();
-			// console.log(this.state)
+			console.log(this.state)
 		} else {
 			alert("Please choose at least one.");
 		}
@@ -54,7 +53,7 @@ class Second extends React.Component {
 					<Choice
 						className="checkbox_choice"
 						type="checkbox"
-						label="Loves dogs."
+						label="Strong passion for good design."
 						name="value1"
 						value="1"
 						onChange={this.firstBox}
@@ -63,10 +62,28 @@ class Second extends React.Component {
 						//   defaultChecked
 						className="checkbox_choice"
 						type="checkbox"
-						label="Loves flowers."
+						label="Willingness to learn."
 						name="value2"
-						value="2"
+						value="1"
 						onChange={this.secondBox}
+					/>
+					<Choice
+						//   defaultChecked
+						className="checkbox_choice"
+						type="checkbox"
+						label="Experience being a team player."
+						name="value3"
+						value="1"
+						onChange={this.thirdBox}
+					/>
+					<Choice
+						//   defaultChecked
+						className="checkbox_choice"
+						type="checkbox"
+						label="Strong interest in civic tech."
+						name="value4"
+						value="1"
+						onChange={this.fourthBox}
 					/>
 				</fieldset>
 				<br />

@@ -23,6 +23,7 @@ class Third extends React.Component {
 				<Button
                a href="mailto:jesababon@gmail.com
                ?subject=Job Offer for Jesica Ababon - NAVA&body=This is only a test!"
+               target="_blank"
 					type="button"
 					className="ds-c-button ds-c-button--primary ds-c-button--big"
 				>
@@ -33,6 +34,7 @@ class Third extends React.Component {
                onClick={this.sayNo}
                a href="mailto:jesababon@gmail.com
                ?subject=Feedback for Jesica Ababon - NAVA&body=This is only a test!"
+               target="_blank"
 					type="button"
 					className="ds-c-button ds-c-button--primary ds-c-button--big"
 				>
