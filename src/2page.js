@@ -14,20 +14,26 @@ class Second extends React.Component {
 		this.handleSubmit = this.handleSubmit.bind(this);
 	}
 
-	firstBox() {
+	firstBox(event) {
 		this.setState(function (state) {
-			state.value += 1;
+         if(event.target.checked === true){
+         state.value += 1;
+         }
+         console.log('first checked?:',event.target.checked)
 		});
 	}
 
-	secondBox() {
+	secondBox(event) {
 		this.setState(function (state) {
-			state.value += 1;
+			if(event.target.checked === true){
+            state.value += 1;
+            }
+            console.log('second checked?:',event.target.checked)
 		});
 	}
 
 	handleSubmit(event) {
-		if (this.state.value >= 1) {
+		if (event.target.checked !== false && this.state.value >= 1) {
 			this.setState({ redirect: true });
 			event.preventDefault();
 			console.log(this.state)
