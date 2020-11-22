@@ -6,14 +6,11 @@ import {Link} from 'react-router-dom';
 
 function Header(){
    return(
-      <div>
-      <header className="App-header ds-u-fill--primary">
         <Link to='/'>
-        <img src={logo} className="App-logo " alt="logo" />
-        </Link>
+      <header className="App-header ds-u-fill--primary">
+        <img src={logo} className="App-logo" alt="logo" />
       </header>
-
-      </div>
+        </Link>
    )
 }
 

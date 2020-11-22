@@ -1,40 +1,40 @@
 Body{
 	margin: 0;
+	font-family: "Open Sans";
 }
 
-.App {
-	text-align: center;
-	align-items: center;
-
- }
- 
  .App-logo {
 	pointer-events: none;
+	margin: 20px;
  }
  
  @media (prefers-reduced-motion: no-preference) {
 	.App-logo {
-	  animation: App-logo-spin infinite 20s linear;
-	  height: 10vw;
+	  /* animation: App-logo-spin infinite 20s linear; */
+	  height: 10vh;
 	}
  }
  
  .App-header {
 	background-color: #282c34;
 	min-height: 15vh;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
 	font-size: calc(5px + 2vmin);
 	color: white;
+	text-align: center;
  }
 
- .App-footer{
+.App-body{
+	 margin: 5vh 5vw;
+	 max-height: 100%;
+ }
+
+footer{
 	background-color: #282c34;
-	position:absolute;
 	bottom: 0;
 	width:100%;
+	position:fixed;
 	font-size: calc(10px + 2vmin);
+	text-align: center;
  }
 
  .App-link {
@@ -3932,7 +3932,7 @@ select.ds-c-field[multiple] {
 	font-size: 48px !important;
 }
 .ds-u-font-size--h1 {
-	font-size: 36px !important;
+	font-size: 30px !important;
 }
 .ds-u-font-size--h2 {
 	font-size: 24px !important;

@@ -52,7 +52,8 @@ class Second extends React.Component {
 		}
 
 		return (
-			<div className="ds-u-display--inline-block">
+			<React.Fragment>
+            <p className="App-body">
 				<p className="ds-u-font-size--h1">
 					What qualities are you looking for in a junior dev?
 				</p>
@@ -62,7 +63,7 @@ class Second extends React.Component {
 				<p className="ds-u-font-size--lead">
                 Minimum of one (1) requirement.
 				</p>
-				<fieldset className="ds-c-fieldset ds-u-display--inline-block">
+				<p>
             <ChoiceList
                choices={[
                { label: 'Strong passion for good design.', value: 'A', defaultChecked: false },
@@ -78,18 +79,18 @@ class Second extends React.Component {
                type="checkbox"
                onChange={this.checkedBox}
             />
-				</fieldset>
-				<br />
-				&nbsp;
+				</p>
+            <p>
 				<button
 					onClick={this.handleSubmit}
-					className="ds-c-button ds-c-button--primary ds-u-margin-top--2"
+					className="ds-c-button ds-c-button--primary"
 				>
 					Submit
 					<RightArrow className="ds-u-margin-left--1" />
 				</button>
-				<br />
-			</div>
+            </p>
+            </p>
+			</React.Fragment>
 		);
 	}
 }

@@ -1,3 +1,4 @@
+import React from 'react';
 import './CMS.css';
 import Header from './header';
 import Footer from './footer';
@@ -9,17 +10,19 @@ import { Redirect } from "react-router";
 
 
 
-function App() {
+class App extends React.Component{
+  render(){
   return (
-    <div className="App ds-u-sans">
+    <React.Fragment>
       <Header/>
       <Redirect from="" to="/" />
       <Route exact path='/' component={First}/>
       <Route exact path='/Second' component={Second}/>
       <Route exact path='/Third' component={Third}/>
       <Footer/>
-    </div>
+    </React.Fragment>
   );
+  }
 }
 
 export default App;

@@ -13,7 +13,8 @@ class Third extends React.Component {
 
 	render() {
 		return (
-			<div>
+			<React.Fragment>
+            <p className="App-body">
 				<h3>Jes would make a great fit!</h3>
             {/* ANIMATION */}
 
@@ -25,7 +26,7 @@ class Third extends React.Component {
                ?subject=Job Offer for Jesica Ababon - NAVA&body=This is only a test!"
                target="_blank"
 					type="button"
-					className="ds-c-button ds-c-button--primary ds-c-button--big"
+					className="ds-c-button ds-c-button--success"
 				>
 					Yes
 				</Button>
@@ -36,11 +37,12 @@ class Third extends React.Component {
                ?subject=Feedback for Jesica Ababon - NAVA&body=This is only a test!"
                target="_blank"
 					type="button"
-					className="ds-c-button ds-c-button--primary ds-c-button--big"
+					className="ds-c-button ds-c-button--danger"
 				>
 					No
 				</Button>
-			</div>
+            </p>
+			</React.Fragment>
 		);
 	}
 }
