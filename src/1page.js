@@ -11,7 +11,9 @@ class First extends React.Component {
 	render() {
 		return (
 			<div>
-				<h3>Are you looking for a new front end developer?</h3>
+				<p className="ds-u-font-size--h1"> 
+        Are you looking for a new front end developer?
+        </p>
 				<Button
 					component={Link}
 					to='/Second'

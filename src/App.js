@@ -11,7 +11,7 @@ import { Redirect } from "react-router";
 
 function App() {
   return (
-    <div className="App">
+    <div className="App ds-u-sans">
       <Header/>
       <Redirect from="" to="/" />
       <Route exact path='/' component={First}/>

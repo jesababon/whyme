@@ -1,6 +1,6 @@
 import React from "react";
 import { ReactComponent as RightArrow } from "./images/next.svg";
-import Choice from "@cmsgov/design-system/dist/components/ChoiceList/Choice";
+import ChoiceList from '@cmsgov/design-system/dist/components/ChoiceList/ChoiceList'
 import { Redirect } from "react-router";
 
 class Second extends React.Component {
@@ -52,49 +52,34 @@ class Second extends React.Component {
 		}
 
 		return (
-			<div>
-				<p className="ds-title">
+			<div className="ds-u-display--inline-block">
+				<p className="ds-u-font-size--h1">
 					What qualities are you looking for in a junior dev?
 				</p>
-				<h1>Choose your requirements.</h1>
-				<h2>Minimum of one requirement.</h2>
-				<br />
+				<p className="ds-u-font-size--h2">
+               Choose your requirements.
+				</p>
+				<p className="ds-u-font-size--lead">
+                Minimum of one (1) requirement.
+				</p>
 				<fieldset className="ds-c-fieldset ds-u-display--inline-block">
-					<Choice
-						className="checkbox_choice"
-						type="checkbox"
-						label="Strong passion for good design."
-						name="value1"
-						
-						onChange={this.checkedBox}
-					/>
-					<Choice
-						className="checkbox_choice"
-						type="checkbox"
-						label="Willingness to learn."
-						name="value2"
-						
-						onChange={this.checkedBox}
-					/>
-					<Choice
-						className="checkbox_choice"
-						type="checkbox"
-						label="Experience being a team player."
-						name="value3"
-						
-						onChange={this.checkedBox}
-					/>
-					<Choice
-						className="checkbox_choice"
-						type="checkbox"
-						label="Strong interest in civic tech."
-						name="value4"
-						
-						onChange={this.checkedBox}
-					/>
+            <ChoiceList
+               choices={[
+               { label: 'Strong passion for good design.', value: 'A', defaultChecked: false },
+               { label: 'Willingness to learn.', value: 'B' },
+               { label: 'Experience being a team player.', value: 'C' },
+               { label: 'Strong interest in civic tech.', value: 'D' },
+               { label: 'Loves dogs.', value: 'E' }
+               ]}
+               className="checkbox_choices"
+               label=""
+               hint=""
+               name="checkbox_choices"
+               type="checkbox"
+               onChange={this.checkedBox}
+            />
 				</fieldset>
 				<br />
-				{/* <input type="text" className="ds-c-field ds-u-display--inline-block" /> */}
 				&nbsp;
 				<button
 					onClick={this.handleSubmit}
