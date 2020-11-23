@@ -10,6 +10,10 @@ html, body {
 	margin: 20px;
  }
 
+ img{
+	max-width: 100%;
+
+ }
  
  @media (prefers-reduced-motion: no-preference) {
 	.App-logo {
