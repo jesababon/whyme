@@ -1,51 +1,47 @@
 import React from "react";
 import Button from "@cmsgov/design-system/dist/components/Button/Button";
-import Resume from './Resume'
+import Resume from "./Resume";
 
 class Third extends React.Component {
 	constructor(props) {
 		super(props);
 		this.state = {};
-   }
-   
-   sayNo() {
+	}
+
+	sayNo() {
 		alert("Please provide feedback");
 	}
 
 	render() {
 		return (
 			<React.Fragment>
-            <p className="App-body">
-				<h3>Jes would make a great fit!</h3>
-            {/* ANIMATION */}
-				<p>
-					<Resume />
-				</p>
-
-
-
-            <h3>Would you like to move forward with Jes as a candidate?</h3>
-				<Button
-               href="mailto:jesababon@gmail.com
+				<div className="App-body">
+					<h3>Jes would make a great fit!</h3>
+					<p>
+						<Resume />
+					</p>
+					<h3>Would you like to move forward with Jes as a candidate?</h3>
+					<Button
+						href="mailto:jesababon@gmail.com
                ?subject=Job Offer for Jesica Ababon - NAVA&body=This is only a test!"
-               target="_blank"
-					type="button"
-					className="ds-c-button ds-c-button--success"
-				>
-					Yes
-				</Button>
-				&nbsp;
-				<Button
-               onClick={this.sayNo}
-               href="mailto:jesababon@gmail.com
+						target="_blank"
+						type="button"
+						className="ds-c-button ds-c-button--success"
+					>
+						Yes
+					</Button>
+					&nbsp;
+					<Button
+						onClick={this.sayNo}
+						href="mailto:jesababon@gmail.com
                ?subject=Feedback for Jesica Ababon - NAVA&body=This is only a test!"
-               target="_blank"
-					type="button"
-					className="ds-c-button ds-c-button--danger"
-				>
-					No
-				</Button>
-            </p>
+						target="_blank"
+						type="button"
+						className="ds-c-button ds-c-button--danger"
+					>
+						No
+					</Button>
+				</div>
 			</React.Fragment>
 		);
 	}

@@ -10,10 +10,10 @@ class First extends React.Component {
 	render() {
 		return (
 			<React.Fragment>
-				<h1 className="App-body ds-u-font-size--h1 ds-u-font-weight--semibold">
+				<div className="App-body">
+				<h1 className="ds-u-font-size--h1 ds-u-font-weight--semibold">
 					Are you looking for a new front end developer?
 				</h1>
-				<p className="App-body">
 					<p className="sub-heading">Curious about your options?</p>
 					<p>
 						<Button
@@ -33,7 +33,7 @@ class First extends React.Component {
 					>
 						NO, NOT RIGHT NOW
 					</Button>
-				</p>
+				</div>
 			</React.Fragment>
 		);
 	}
