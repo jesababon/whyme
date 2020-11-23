@@ -8,6 +8,7 @@ import fea from "./images/fatalencounters.gif";
 class Resume extends React.Component {
 	render() {
 		return (
+         <div>
 			<Tabs>
 				<TabPanel id="resume" tab="Resume">
 					<Iframe
@@ -60,6 +61,7 @@ class Resume extends React.Component {
                   <p className="ds-u-text-align--center"><img src={fea} className="Projects" alt="logo" /></p>
 				</TabPanel>
 			</Tabs>
+         </div>
 		);
 	}
 }

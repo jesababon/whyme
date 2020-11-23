@@ -14,10 +14,17 @@ html, body {
 	max-width: 100%;
 
  }
+
+ @keyframes swing {
+	0%, 100% { transform: rotate(-30deg); }
+	20% {transform:scale(.95);}
+	50% { transform: rotate(30deg); }
+	80% {transform:scale(.95);}
+ }
  
  @media (prefers-reduced-motion: no-preference) {
 	.App-logo {
-	  /* animation: App-logo-spin infinite 20s linear; */
+	  animation: swing 4s infinite ease-in-out;
 	  height: 10vh;
 	  width: auto;
 	}
