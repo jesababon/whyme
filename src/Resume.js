@@ -61,10 +61,10 @@ class Resume extends React.Component {
 								Data visualization Express.js app utlizing database of
 								police-related homicides.
 							</li>
-							<li>HTML, CSS, Express.js, PostgreSQL, Google Maps API, </li>
+							<li>HTML, CSS, Express.js, PostgreSQL, Google Maps API </li>
 						</ul>
-						<div className="ds-u-text-align--center" target="_blank">
-							<Link to="/Fea">
+						<div className="ds-u-text-align--center">
+							<Link to="/Fea" target="_blank">
 							<img src={fea} className="Projects" alt="logo" />
 							</Link>
 						</div>
