@@ -19,7 +19,7 @@ class Resume extends React.Component {
 						/>
 					</TabPanel>
 					<TabPanel id="project1" tab="Project 1">
-						<h2 class="ds-h4" id="unordered-list-id">
+						<h2 className="ds-h4" id="unordered-list-id">
 							This React Site
 						</h2>
 						<ul className="ds-c-list" aria-labelledby="unordered-list-id">
@@ -32,10 +32,10 @@ class Resume extends React.Component {
 						</ul>
 					</TabPanel>
 					<TabPanel id="project2" tab="Project 2">
-						<h2 class="ds-h4" id="unordered-list-id">
+						<h2 className="ds-h4" id="unordered-list-id">
 							Savvy Sapian
 						</h2>
-						<ul class="ds-c-list" aria-labelledby="unordered-list-id">
+						<ul className="ds-c-list" aria-labelledby="unordered-list-id">
 							<li>
 								Geo-location based artistic events suggestion using Artsy and
 								Artbeat API.
@@ -50,10 +50,10 @@ class Resume extends React.Component {
 						</div>
 					</TabPanel>
 					<TabPanel id="project3" tab="Project 3">
-						<h2 class="ds-h4" id="unordered-list-id">
+						<h2 className="ds-h4" id="unordered-list-id">
 							Fatal Encounters
 						</h2>
-						<ul class="ds-c-list" aria-labelledby="unordered-list-id">
+						<ul className="ds-c-list" aria-labelledby="unordered-list-id">
 							<li>
 								Data visualization Express.js app utlizing database of
 								police-related homicides.

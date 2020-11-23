@@ -16,15 +16,18 @@ class Second extends React.Component {
 	checkedBox(event) {
 		this.setState(function (state) {
 			if (event.target.checked === true) {
-				state.value += 1;
+				state.value += .5;
 			} else {
-				state.value -= 1;
+				state.value -= .5;
 			}
+			return this.state.value;
 		});
 	}
 
+
+
 	handleSubmit(event) {
-		if (this.state.value > 1) {
+		if (this.state.value >= 1) {
 			this.setState({ redirect: true });
 			event.preventDefault();
 		} else {
@@ -37,6 +40,8 @@ class Second extends React.Component {
 			return <Redirect push to="Third" />;
 		}
 
+		// console.log("Count:", this.state.value);
+
 		return (
 			<React.Fragment>
 				<div className="App-body">
@@ -47,35 +52,34 @@ class Second extends React.Component {
 					<p className="ds-u-font-size--lead">
 						Minimum of one (1) requirement.
 					</p>
-						<ChoiceList
-							choices={[
-								{
-									label: "Strong passion for good design.",
-									value: "A",
-									defaultChecked: false,
-								},
-								{ label: "Willingness to learn.", value: "B" },
-								{ label: "Experience being a team player.", value: "C" },
-								{ label: "Strong interest in civic tech.", value: "D" },
-								{ label: "Loves dogs.", value: "E" },
-							]}
-							className="checkbox_choices"
-							label=""
-							hint=""
-							name="checkbox_choices"
-							type="checkbox"
-							onChange={this.checkedBox}
-						/>
+					<ChoiceList
+						choices={[
+							{
+								label: "Strong passion for good design.",
+								value: "A",
+								defaultChecked: false,
+							},
+							{ label: "Willingness to learn.", value: "B" },
+							{ label: "Experience being a team player.", value: "C" },
+							{ label: "Strong interest in civic tech.", value: "D" },
+							{ label: "Loves dogs.", value: "E" },
+						]}
+						className="checkbox_choices"
+						label=""
+						hint=""
+						name="checkbox_choices"
+						type="checkbox"
+						onChange={this.checkedBox}
+					/>
 
-				<br/>
-						<button
-							onClick={this.handleSubmit}
-							className="ds-c-button ds-c-button--primary"
-						>
-							Submit
-							<RightArrow className="ds-u-margin-left--1" />
-						</button>
-
+					<br />
+					<button
+						onClick={this.handleSubmit}
+						className="ds-c-button ds-c-button--primary"
+					>
+						Submit
+						<RightArrow className="ds-u-margin-left--1" />
+					</button>
 				</div>
 			</React.Fragment>
 		);

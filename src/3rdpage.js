@@ -17,9 +17,7 @@ class Third extends React.Component {
 			<React.Fragment>
 				<div className="App-body">
 					<h3>Jes would make a great fit!</h3>
-					<p>
 						<Resume />
-					</p>
 					<h3>Would you like to move forward with Jes as a candidate?</h3>
 					<Button
 						href="mailto:jesababon@gmail.com
