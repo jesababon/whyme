@@ -27,11 +27,11 @@ class Second extends React.Component {
 
 
 	handleSubmit(event) {
-		if (this.state.value >= 1) {
+		if (this.state.value > 0) {
 			this.setState({ redirect: true });
 			event.preventDefault();
 		} else {
-			alert("Please choose at least one.");
+			alert("Please choose at least two requirements.");
 		}
 	}
 
@@ -48,7 +48,7 @@ class Second extends React.Component {
 					<h1 className="ds-u-font-size--h1">
 						What qualities are you looking for in a junior dev?
 					</h1>
-					<h2 className="ds-u-font-size--h2">Choose your requirements.</h2>
+					<h2 className="ds-u-font-size--h2">Please choose your requirements.</h2>
 					<p className="ds-u-font-size--lead">
 						Minimum of two (2) requirements.
 					</p>
