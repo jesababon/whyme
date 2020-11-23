@@ -1,27 +1,30 @@
 {
   "files": {
-    "main.css": "/whyme/static/css/main.53f391a4.chunk.css",
-    "main.js": "/whyme/static/js/main.f3183f1e.chunk.js",
-    "main.js.map": "/whyme/static/js/main.f3183f1e.chunk.js.map",
-    "runtime-main.js": "/whyme/static/js/runtime-main.e35ecd81.js",
-    "runtime-main.js.map": "/whyme/static/js/runtime-main.e35ecd81.js.map",
-    "static/js/2.488fb311.chunk.js": "/whyme/static/js/2.488fb311.chunk.js",
-    "static/js/2.488fb311.chunk.js.map": "/whyme/static/js/2.488fb311.chunk.js.map",
-    "static/js/3.69ef7610.chunk.js": "/whyme/static/js/3.69ef7610.chunk.js",
-    "static/js/3.69ef7610.chunk.js.map": "/whyme/static/js/3.69ef7610.chunk.js.map",
+    "main.css": "/whyme/static/css/main.d4045ccf.chunk.css",
+    "main.js": "/whyme/static/js/main.38a14292.chunk.js",
+    "main.js.map": "/whyme/static/js/main.38a14292.chunk.js.map",
+    "runtime-main.js": "/whyme/static/js/runtime-main.5ab80ef3.js",
+    "runtime-main.js.map": "/whyme/static/js/runtime-main.5ab80ef3.js.map",
+    "static/css/2.49565d88.chunk.css": "/whyme/static/css/2.49565d88.chunk.css",
+    "static/js/2.ce6a37ef.chunk.js": "/whyme/static/js/2.ce6a37ef.chunk.js",
+    "static/js/2.ce6a37ef.chunk.js.map": "/whyme/static/js/2.ce6a37ef.chunk.js.map",
+    "static/js/3.404dcd88.chunk.js": "/whyme/static/js/3.404dcd88.chunk.js",
+    "static/js/3.404dcd88.chunk.js.map": "/whyme/static/js/3.404dcd88.chunk.js.map",
     "index.html": "/whyme/index.html",
-    "static/css/main.53f391a4.chunk.css.map": "/whyme/static/css/main.53f391a4.chunk.css.map",
-    "static/js/2.488fb311.chunk.js.LICENSE.txt": "/whyme/static/js/2.488fb311.chunk.js.LICENSE.txt",
-    "static/media/CMS.css": "/whyme/static/media/warning.e36e906b.svg",
+    "static/css/2.49565d88.chunk.css.map": "/whyme/static/css/2.49565d88.chunk.css.map",
+    "static/css/main.d4045ccf.chunk.css.map": "/whyme/static/css/main.d4045ccf.chunk.css.map",
+    "static/js/2.ce6a37ef.chunk.js.LICENSE.txt": "/whyme/static/js/2.ce6a37ef.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/whyme/static/media/warning.e36e906b.svg",
     "static/media/fatalencounters.61337084.gif": "/whyme/static/media/fatalencounters.61337084.gif",
     "static/media/logo.7a75fbc6.svg": "/whyme/static/media/logo.7a75fbc6.svg",
     "static/media/next.6344ca97.svg": "/whyme/static/media/next.6344ca97.svg",
     "static/media/savvysapian.383ed700.gif": "/whyme/static/media/savvysapian.383ed700.gif"
   },
   "entrypoints": [
-    "static/js/runtime-main.e35ecd81.js",
-    "static/js/2.488fb311.chunk.js",
-    "static/css/main.53f391a4.chunk.css",
-    "static/js/main.f3183f1e.chunk.js"
+    "static/js/runtime-main.5ab80ef3.js",
+    "static/css/2.49565d88.chunk.css",
+    "static/js/2.ce6a37ef.chunk.js",
+    "static/css/main.d4045ccf.chunk.css",
+    "static/js/main.38a14292.chunk.js"
   ]
 }
