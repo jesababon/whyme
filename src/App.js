@@ -1,5 +1,6 @@
 import React from 'react';
-import './CMS.css';
+import './style.css';
+import '@cmsgov/design-system/dist/css/index.css'
 import Header from './header';
 import Footer from './footer';
 import First from './1page';
