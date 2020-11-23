@@ -1,5 +1,6 @@
 import React from "react";
 import Button from "@cmsgov/design-system/dist/components/Button/Button";
+import Resume from './Resume'
 
 class Third extends React.Component {
 	constructor(props) {
@@ -17,6 +18,9 @@ class Third extends React.Component {
             <p className="App-body">
 				<h3>Jes would make a great fit!</h3>
             {/* ANIMATION */}
+				<p>
+					<Resume />
+				</p>
 
 
 
