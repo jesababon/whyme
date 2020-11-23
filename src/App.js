@@ -17,8 +17,8 @@ class App extends React.Component{
     <React.Fragment>
       <Header />
       <div role="main">
-      <Redirect from="" to="/"/>
-      <Route exact path='/' component={First}/>
+      <Redirect from="" to="/whyme"/>
+      <Route exact path='/whyme' component={First}/>
       <Route exact path='/Second' component={Second}/>
       <Route exact path='/Third' component={Third}/>
       <Route exact path='/Resume' component={Resume}/>

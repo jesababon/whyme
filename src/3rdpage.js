@@ -16,7 +16,7 @@ class Third extends React.Component {
 		return (
 			<React.Fragment>
 				<div className="App-body">
-					<h3>Jes would make a great fit!</h3>
+					<h3 className="ds-u-text-align--center">Jes would make a great fit!</h3>
 						<Resume />
 					<h3>Would you like to move forward with Jes as a candidate?</h3>
 					<Button
