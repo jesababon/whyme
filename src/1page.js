@@ -10,7 +10,7 @@ class First extends React.Component {
 	render() {
 		return (
 			<React.Fragment>
-				<div className="App-body" role="main">
+				<div className="App-body">
 				<h1 className="ds-u-font-size--h1 ds-u-font-weight--semibold">
 					Are you looking for a new front end developer?
 				</h1>

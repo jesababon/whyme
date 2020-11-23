@@ -1,113 +1,131 @@
-html, body {
+html,
+body {
 	margin: 0;
 	height: 100%;
 	font-family: "Open Sans";
 	position: relative;
- }
+}
 
- .App-logo {
+.App-logo {
 	pointer-events: none;
 	margin: 20px;
- }
+}
 
- img{
+img {
 	max-width: 100%;
+}
 
- }
-
- @keyframes swing {
-	0%, 100% { transform: rotate(-30deg); }
-	20% {transform:scale(.95);}
-	50% { transform: rotate(30deg); }
-	80% {transform:scale(.95);}
- }
- 
- @media (prefers-reduced-motion: no-preference) {
-	.App-logo {
-	  animation: swing 4s infinite ease-in-out;
-	  height: 10vh;
-	  width: auto;
+@keyframes swing {
+	0%,
+	100% {
+		transform: rotate(-30deg);
 	}
- }
- 
-iframe{            
-	width:100%;
+	20% {
+		transform: scale(0.95);
+	}
+	50% {
+		transform: rotate(30deg);
+	}
+	80% {
+		transform: scale(0.95);
+	}
+}
+
+@media (prefers-reduced-motion: no-preference) {
+	.App-logo {
+		animation: swing 4s infinite ease-in-out;
+		height: 10vh;
+		width: auto;
+	}
+}
+
+iframe {
+	width: 100%;
 	height: 100vh;
 	overflow: scroll;
 	padding-bottom: 5%;
-
 }
 
- .App-header {
+.App-header {
 	background-color: #282c34;
-	top:0;
+	top: 0;
 	min-height: 10vh;
 	font-size: calc(5px + 2vmin);
 	color: white;
 	text-align: center;
 	position: sticky;
 	z-index: 999;
+}
 
-	
- }
+.App-body {
+	margin: 5vh 5vw;
+	max-height: 100%;
+	padding-bottom: 5%;
+}
 
-.App-body{
-	 margin: 5vh 5vw;
-	 max-height: 100%;
-	 padding-bottom: 5%;
- }
-
-footer{
+footer {
 	background-color: #282c34;
 	bottom: 0;
-	width:100%;
-	position:fixed;
+	width: 100%;
+	position: fixed;
 	font-size: calc(5px + 2vmin);
 	text-align: center;
- }
+}
 
- .App-link {
+.App-link {
 	color: #61dafb;
 	text-decoration: none;
- }
- 
- @keyframes App-logo-spin {
+}
+
+@keyframes App-logo-spin {
 	from {
-	  transform: rotate(0deg);
+		transform: rotate(0deg);
 	}
 	to {
-	  transform: rotate(360deg);
+		transform: rotate(360deg);
 	}
- }
+}
 @font-face {
 	font-family: Bitter;
 	font-style: normal;
 	font-weight: 400;
 	src: url(/node_modules/@cmsgov/design-system/dist/fonts/Bitter-Regular.eot);
-	src: url(/node_modules/@cmsgov/design-system/dist/fonts/Bitter-Regular.eot?#iefix) format("embedded-opentype"),
-		url(/node_modules/@cmsgov/design-system/dist/fonts/Bitter-Regular.woff2) format("woff2"),
-		url(/node_modules/@cmsgov/design-system/dist/fonts/Bitter-Regular.woff) format("woff"),
-		url(/node_modules/@cmsgov/design-system/dist/fonts/Bitter-Regular.ttf) format("truetype");
+	src: url(/node_modules/@cmsgov/design-system/dist/fonts/Bitter-Regular.eot?#iefix)
+			format("embedded-opentype"),
+		url(/node_modules/@cmsgov/design-system/dist/fonts/Bitter-Regular.woff2)
+			format("woff2"),
+		url(/node_modules/@cmsgov/design-system/dist/fonts/Bitter-Regular.woff)
+			format("woff"),
+		url(/node_modules/@cmsgov/design-system/dist/fonts/Bitter-Regular.ttf)
+			format("truetype");
 }
 @font-face {
 	font-family: Bitter;
 	font-style: bold;
 	font-weight: 700;
 	src: url(/node_modules/@cmsgov/design-system/dist/fonts/Bitter-Bold.eot);
-	src: url(/node_modules/@cmsgov/design-system/dist/fonts/Bitter-Bold.eot?#iefix) format("embedded-opentype"),
-		url(/node_modules/@cmsgov/design-system/dist/fonts/Bitter-Bold.woff2) format("woff2"),
-		url(/node_modules/@cmsgov/design-system/dist/fonts/Bitter-Bold.woff) format("woff"),
-		url(/node_modules/@cmsgov/design-system/dist/fonts/Bitter-Bold.ttf) format("truetype");
+	src: url(/node_modules/@cmsgov/design-system/dist/fonts/Bitter-Bold.eot?#iefix)
+			format("embedded-opentype"),
+		url(/node_modules/@cmsgov/design-system/dist/fonts/Bitter-Bold.woff2)
+			format("woff2"),
+		url(/node_modules/@cmsgov/design-system/dist/fonts/Bitter-Bold.woff)
+			format("woff"),
+		url(/node_modules/@cmsgov/design-system/dist/fonts/Bitter-Bold.ttf)
+			format("truetype");
 }
 @font-face {
 	font-family: Bitter;
 	font-style: italic;
 	font-weight: 400;
 	src: url(/node_modules/@cmsgov/design-system/dist/fonts/Bitter-Italic.eot);
-	src: url(/node_modules/@cmsgov/design-system/dist/fonts/Bitter-Italic.eot?#iefix) format("embedded-opentype"),
-		url(/node_modules/@cmsgov/design-system/dist/fonts/Bitter-Italic.woff2) format("woff2"),
-		url(/node_modules/@cmsgov/design-system/dist/fonts/Bitter-Italic.woff) format("woff"),
-		url(/node_modules/@cmsgov/design-system/dist/fonts/Bitter-Italic.ttf) format("truetype");
+	src: url(/node_modules/@cmsgov/design-system/dist/fonts/Bitter-Italic.eot?#iefix)
+			format("embedded-opentype"),
+		url(/node_modules/@cmsgov/design-system/dist/fonts/Bitter-Italic.woff2)
+			format("woff2"),
+		url(/node_modules/@cmsgov/design-system/dist/fonts/Bitter-Italic.woff)
+			format("woff"),
+		url(/node_modules/@cmsgov/design-system/dist/fonts/Bitter-Italic.ttf)
+			format("truetype");
 }
 @font-face {
 	font-family: Open Sans;
@@ -116,9 +134,12 @@ footer{
 	src: url(/node_modules/@cmsgov/design-system/dist/fonts/OpenSans-Regular-webfont.eot);
 	src: url(/node_modules/@cmsgov/design-system/dist/fonts/OpenSans-Regular-webfont.eot?#iefix)
 			format("embedded-opentype"),
-		url(/node_modules/@cmsgov/design-system/dist/fonts/OpenSans-Regular-webfont.woff2) format("woff2"),
-		url(/node_modules/@cmsgov/design-system/dist/fonts/OpenSans-Regular-webfont.woff) format("woff"),
-		url(/node_modules/@cmsgov/design-system/dist/fonts/OpenSans-Regular-webfont.ttf) format("truetype");
+		url(/node_modules/@cmsgov/design-system/dist/fonts/OpenSans-Regular-webfont.woff2)
+			format("woff2"),
+		url(/node_modules/@cmsgov/design-system/dist/fonts/OpenSans-Regular-webfont.woff)
+			format("woff"),
+		url(/node_modules/@cmsgov/design-system/dist/fonts/OpenSans-Regular-webfont.ttf)
+			format("truetype");
 }
 @font-face {
 	font-family: Open Sans;
@@ -127,9 +148,12 @@ footer{
 	src: url(/node_modules/@cmsgov/design-system/dist/fonts/OpenSans-Italic-webfont.eot);
 	src: url(/node_modules/@cmsgov/design-system/dist/fonts/OpenSans-Italic-webfont.eot?#iefix)
 			format("embedded-opentype"),
-		url(/node_modules/@cmsgov/design-system/dist/fonts/OpenSans-Italic-webfont.woff2) format("woff2"),
-		url(/node_modules/@cmsgov/design-system/dist/fonts/OpenSans-Italic-webfont.woff) format("woff"),
-		url(/node_modules/@cmsgov/design-system/dist/fonts/OpenSans-Italic-webfont.ttf) format("truetype");
+		url(/node_modules/@cmsgov/design-system/dist/fonts/OpenSans-Italic-webfont.woff2)
+			format("woff2"),
+		url(/node_modules/@cmsgov/design-system/dist/fonts/OpenSans-Italic-webfont.woff)
+			format("woff"),
+		url(/node_modules/@cmsgov/design-system/dist/fonts/OpenSans-Italic-webfont.ttf)
+			format("truetype");
 }
 @font-face {
 	font-family: Open Sans;
@@ -138,9 +162,12 @@ footer{
 	src: url(/node_modules/@cmsgov/design-system/dist/fonts/OpenSans-Semibold-webfont.eot);
 	src: url(/node_modules/@cmsgov/design-system/dist/fonts/OpenSans-Semibold-webfont.eot?#iefix)
 			format("embedded-opentype"),
-		url(/node_modules/@cmsgov/design-system/dist/fonts/OpenSans-Semibold-webfont.woff2) format("woff2"),
-		url(/node_modules/@cmsgov/design-system/dist/fonts/OpenSans-Semibold-webfont.woff) format("woff"),
-		url(/node_modules/@cmsgov/design-system/dist/fonts/OpenSans-Semibold-webfont.ttf) format("truetype");
+		url(/node_modules/@cmsgov/design-system/dist/fonts/OpenSans-Semibold-webfont.woff2)
+			format("woff2"),
+		url(/node_modules/@cmsgov/design-system/dist/fonts/OpenSans-Semibold-webfont.woff)
+			format("woff"),
+		url(/node_modules/@cmsgov/design-system/dist/fonts/OpenSans-Semibold-webfont.ttf)
+			format("truetype");
 }
 @font-face {
 	font-family: Open Sans;
@@ -149,9 +176,12 @@ footer{
 	src: url(/node_modules/@cmsgov/design-system/dist/fonts/OpenSans-Bold-webfont.eot);
 	src: url(/node_modules/@cmsgov/design-system/dist/fonts/OpenSans-Bold-webfont.eot?#iefix)
 			format("embedded-opentype"),
-		url(/node_modules/@cmsgov/design-system/dist/fonts/OpenSans-Bold-webfont.woff2) format("woff2"),
-		url(/node_modules/@cmsgov/design-system/dist/fonts/OpenSans-Bold-webfont.woff) format("woff"),
-		url(/node_modules/@cmsgov/design-system/dist/fonts/OpenSans-Bold-webfont.ttf) format("truetype");
+		url(/node_modules/@cmsgov/design-system/dist/fonts/OpenSans-Bold-webfont.woff2)
+			format("woff2"),
+		url(/node_modules/@cmsgov/design-system/dist/fonts/OpenSans-Bold-webfont.woff)
+			format("woff"),
+		url(/node_modules/@cmsgov/design-system/dist/fonts/OpenSans-Bold-webfont.ttf)
+			format("truetype");
 }
 .ds-base,
 .ds-base--inverse {
@@ -1629,7 +1659,8 @@ a:active {
 	margin-top: 24px;
 }
 .ds-c-dialog__close {
-	background: url(/node_modules/@cmsgov/design-system/dist/images/close--primary.svg) 0 no-repeat;
+	background: url(/node_modules/@cmsgov/design-system/dist/images/close--primary.svg)
+		0 no-repeat;
 	background-size: 12px 12px;
 	margin-left: auto;
 	padding: 0 0 0 20px;
@@ -2539,7 +2570,6 @@ select.ds-c-field[multiple] {
 	display: flex;
 	margin: 5%;
 	position: relative;
-	 
 }
 .ds-c-tabs,
 .ds-c-tabs__panel {
