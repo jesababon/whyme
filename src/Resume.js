@@ -4,7 +4,6 @@ import TabPanel from "@cmsgov/design-system/dist/components/Tabs/TabPanel";
 import Iframe from "react-iframe";
 import savvy from "./images/savvysapian.gif";
 import fea from "./images/fatalencounters.gif";
-import { Link } from "react-router-dom";
 
 class Resume extends React.Component {
 	render() {
@@ -47,9 +46,9 @@ class Resume extends React.Component {
 							</li>
 						</ul>
 						<div className="ds-u-text-align--center">
-							<Link to="/Savvy" target="_blank">
+							<a href="https://github.com/jesababon/savvysapian" target="_blank">
 							<img src={savvy} className="Projects" alt="logo" />
-							</Link>
+							</a>
 						</div>
 					</TabPanel>
 					<TabPanel id="project3" tab="Project 3">
@@ -64,9 +63,9 @@ class Resume extends React.Component {
 							<li>HTML, CSS, Express.js, PostgreSQL, Google Maps API </li>
 						</ul>
 						<div className="ds-u-text-align--center">
-							<Link to="/Fea" target="_blank">
+							<a href="https://github.com/jesababon/fea" target="_blank">
 							<img src={fea} className="Projects" alt="logo" />
-							</Link>
+							</a>
 						</div>
 					</TabPanel>
 				</Tabs>
