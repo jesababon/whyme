@@ -1,29 +1,25 @@
 # WHY ME
 
-An argument for a jr dev bootstrapped with [Create React App].
+An argument for a jr dev bootstrapped with [Create React App] and design.cms.gov.
 
-## Header
+## CMS Designs
 
-text
+Utilized instructions at design.cms.gov to import css standards.
 
-### subHeader
+### Image Loading with File-Loader and React
 
-text
+CMS standard images loaded using webpack.config.js and file-loader.
+Change hard-coded svg colors to "currentColor" so they inhert from cms components.
 
-### subHeader
+### React Rendering
 
-text
+Rendering pages as components and modularizing functionality as passed functions using react-router-dom.
 
-### subHeader
+### Accessibility
 
-text
+Considered accessibility standards using react-axe.
+**Note: https://web.dev/accessibility-auditing-react/ **
 
-### subHeader
+## Thanks
 
-**Note: just a note**
-
-text
-
-## Learn More
-
-You can learn more about [Jes] (https://linkedin.com/in/jesababon/).
+Thank you for your consideration.
