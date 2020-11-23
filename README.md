@@ -1,6 +1,6 @@
 # WHY ME
 
-An argument for a jr dev bootstrapped with [Create React App] and design.cms.gov.
+An argument for a jr dev using design.cms.gov.
 
 ## CMS Designs
 
