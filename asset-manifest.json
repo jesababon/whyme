@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/whyme/static/css/main.d4045ccf.chunk.css",
-    "main.js": "/whyme/static/js/main.b1952166.chunk.js",
-    "main.js.map": "/whyme/static/js/main.b1952166.chunk.js.map",
+    "main.css": "/whyme/static/css/main.b84e0854.chunk.css",
+    "main.js": "/whyme/static/js/main.8d115e72.chunk.js",
+    "main.js.map": "/whyme/static/js/main.8d115e72.chunk.js.map",
     "runtime-main.js": "/whyme/static/js/runtime-main.5ab80ef3.js",
     "runtime-main.js.map": "/whyme/static/js/runtime-main.5ab80ef3.js.map",
     "static/css/2.49565d88.chunk.css": "/whyme/static/css/2.49565d88.chunk.css",
@@ -12,7 +12,7 @@
     "static/js/3.404dcd88.chunk.js.map": "/whyme/static/js/3.404dcd88.chunk.js.map",
     "index.html": "/whyme/index.html",
     "static/css/2.49565d88.chunk.css.map": "/whyme/static/css/2.49565d88.chunk.css.map",
-    "static/css/main.d4045ccf.chunk.css.map": "/whyme/static/css/main.d4045ccf.chunk.css.map",
+    "static/css/main.b84e0854.chunk.css.map": "/whyme/static/css/main.b84e0854.chunk.css.map",
     "static/js/2.79243d77.chunk.js.LICENSE.txt": "/whyme/static/js/2.79243d77.chunk.js.LICENSE.txt",
     "static/media/index.css": "/whyme/static/media/warning.e36e906b.svg",
     "static/media/fatalencounters.61337084.gif": "/whyme/static/media/fatalencounters.61337084.gif",
@@ -24,7 +24,7 @@
     "static/js/runtime-main.5ab80ef3.js",
     "static/css/2.49565d88.chunk.css",
     "static/js/2.79243d77.chunk.js",
-    "static/css/main.d4045ccf.chunk.css",
-    "static/js/main.b1952166.chunk.js"
+    "static/css/main.b84e0854.chunk.css",
+    "static/js/main.8d115e72.chunk.js"
   ]
 }
