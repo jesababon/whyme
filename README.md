@@ -18,6 +18,7 @@ Rendering pages as components and modularizing functionality as passed functions
 ### Accessibility
 
 Considered accessibility standards using react-axe.
+
 **Note: https://web.dev/accessibility-auditing-react/ **
 
 ## Thanks
