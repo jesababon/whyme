@@ -31,7 +31,7 @@ class Second extends React.Component {
 			this.setState({ redirect: true });
 			event.preventDefault();
 		} else {
-			alert("Please choose at least two requirements.");
+			alert("Please choose at least one requirement.");
 		}
 	}
 
@@ -50,7 +50,7 @@ class Second extends React.Component {
 					</h1>
 					<h2 className="ds-u-font-size--h2">Please choose your requirements.</h2>
 					<p className="ds-u-font-size--lead">
-						Minimum of two (2) requirements.
+						Minimum of one (1) requirement.
 					</p>
 					<ChoiceList
 						choices={[
