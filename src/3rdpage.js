@@ -21,7 +21,7 @@ class Third extends React.Component {
 					<h3>Would you like to move forward with Jes as a candidate?</h3>
 					<Button
 						href="mailto:jesababon@gmail.com
-               ?subject=Job Offer for Jesica Ababon - NAVA&body=This is only a test!"
+               ?subject=Job Offer for Jesica Ababon - NAVA&body=Job Offer for Jesica Ababon:"
 						target="_blank"
 						type="button"
 						className="ds-c-button ds-c-button--success"
@@ -32,7 +32,7 @@ class Third extends React.Component {
 					<Button
 						onClick={this.sayNo}
 						href="mailto:jesababon@gmail.com
-               ?subject=Feedback for Jesica Ababon - NAVA&body=This is only a test!"
+               ?subject=Feedback for Jesica Ababon - NAVA&body=Constructive criticism for Jesica Ababon:"
 						target="_blank"
 						type="button"
 						className="ds-c-button ds-c-button--danger"
