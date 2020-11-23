@@ -25,6 +25,8 @@ class App extends React.Component{
       <Route exact path='/Resume' component={Resume}/>
       <Route exact path="/LinkedIn" render={() => (window.location = "https://linkedin.com/in/jesababon/")}/>
       <Route exact path="/GitHub" render={() => (window.location = "https://github.com/jesababon")}/>
+      <Route exact path="/Savvy" render={() => (window.location = "https://github.com/jesababon/savvysapian")}/>
+      <Route exact path="/Fea" render={() => (window.location = "https://github.com/jesababon/fea")}/>
       </div>
       <Footer/>
     </React.Fragment>

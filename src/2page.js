@@ -40,7 +40,7 @@ class Second extends React.Component {
 			return <Redirect push to="Third" />;
 		}
 
-		// console.log("Count:", this.state.value);
+		console.log("Count:", this.state.value);
 
 		return (
 			<React.Fragment>
@@ -50,7 +50,7 @@ class Second extends React.Component {
 					</h1>
 					<h2 className="ds-u-font-size--h2">Choose your requirements.</h2>
 					<p className="ds-u-font-size--lead">
-						Minimum of one (1) requirement.
+						Minimum of two (2) requirements.
 					</p>
 					<ChoiceList
 						choices={[
