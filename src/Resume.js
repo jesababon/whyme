@@ -44,8 +44,8 @@ class Resume extends React.Component {
 							Geo-location based artistic events suggestion using Artsy and Artbeat API.
 						</li>
 						<li>HTML, CSS, React.js, Express.js, Google Maps API, Arsty API/JSON, Artbeat API/XML</li>
-						<p><img src={savvy} className="Projects" alt="logo" /></p>
 					</ul>
+						<p className="ds-u-text-align--center"><img src={savvy} className="Projects" alt="logo" /></p>
 				</TabPanel>
 				<TabPanel id="project3" tab="Project 3">
 					<h2 class="ds-h4" id="unordered-list-id">
@@ -56,8 +56,8 @@ class Resume extends React.Component {
 							Data visualization Express.js app utlizing database of police-related homicides.
 						</li>
 						<li>HTML, CSS, Express.js, PostgreSQL, Google Maps API, </li>
-                  <p><img src={fea} className="Projects" alt="logo" /></p>
 					</ul>
+                  <p className="ds-u-text-align--center"><img src={fea} className="Projects" alt="logo" /></p>
 				</TabPanel>
 			</Tabs>
 		);
